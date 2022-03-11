@@ -1,0 +1,80 @@
+/*Configure the tab buttons*/
+.charsheet .sheet-main,
+.charsheet .sheet-skills,
+.charsheet .sheet-feats,
+.charsheet .sheet-items,
+.charsheet .sheet-attacks,
+.charsheet .sheet-spells,
+.charsheet .sheet-abilities,
+.charsheet .sheet-notes{
+    display: none;
+}
+
+/* show the selected tab */
+.charsheet .sheet-tabstoggle[value="main"] ~ div.sheet-main,
+.charsheet .sheet-tabstoggle[value="skills"] ~ div.sheet-skills,
+.charsheet .sheet-tabstoggle[value="feats"] ~ div.sheet-feats,
+.charsheet .sheet-tabstoggle[value="items"] ~ div.sheet-items,
+.charsheet .sheet-tabstoggle[value="attacks"] ~ div.sheet-attacks,
+.charsheet .sheet-tabstoggle[value="spells"] ~ div.sheet-spells,
+.charsheet .sheet-tabstoggle[value="abilities"] ~ div.sheet-abilities,
+.charsheet .sheet-tabstoggle[value="notes"] ~ div.sheet-notes{
+    display: block;
+    background-color: black;
+    color: white;
+    margin 0px;
+    padding 0px;
+    width 98%;
+}
+
+
+
+
+
+td{
+  padding-bottom: 5px;
+  width: 85px;
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+th{
+    text-align: center;
+    padding-bottom: 5px;
+    height: 50px;
+    
+}
+
+table{
+    background-color: gray;
+    color: white;
+}
+
+
+/* table{
+    width: 50%;
+    table-layout: auto;
+    float: center;
+} */
+
+/*body {<!--from w ww.j a v  a 2s . c o m-->
+  width: 90%;
+  margin: 0 auto;
+}*/
+
+/*table:first-child {
+  background-color: blue;
+  color: white;
+  margin-right: 1%;
+}
+
+table:nth-child(2n) {
+  background-color: blue;
+  color: white;
+}
+
+table {
+  width: 49%;
+  float: left;
+}/*

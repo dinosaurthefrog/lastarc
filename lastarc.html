@@ -1,0 +1,748 @@
+<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"  />
+<div>
+    <button type="action" name="act_main" >Main</button>
+    <button type="action" name="act_skills" >Skills</button>
+    <button type="action" name="act_feats" >Feats</button>
+    <button type="action" name="act_items" >Items</button>
+    <button type="action" name="act_attacks" >Attacks</button>
+    <button type="action" name="act_spells" >Spells</button> 
+    <button type="action" name="act_abilities" >Abilities</button>
+    <button type="action" name="act_notes" >Notes</button>     
+</div>
+
+<div class="sheet-main">
+    <table>
+        <tr>
+            <td>Hero Points</td>
+            <td><input title="Character Hero Points" type="number" name="attr_character_hero_points" style="width:50px"></td>
+        </tr>
+    </table><br>
+    <table>
+        <th>General</th>
+        <tr>
+            <td>Name</td>
+            <td><input title="Character Name" type="text" name="attr_character_name"> </td>
+            <td>Level</td>
+            <td><input title="Character Level" type="number" name="attr_character_level"></td>
+            <td>Condition</td>
+        </tr>
+        <tr>
+            <td>Race</td>
+            <td><input title="Character Race" type="text" name="attr_character_race"></td>
+            <td>Gender</td>
+            <td><input title="Character Gender" type="text" name="attr_character_gender"></td>
+            <td>Normal <br> <input id="condition1" type="checkbox" name="attr_conditionnormal" value="1" /></td>
+        </tr>
+        <tr>
+            <td>Class</td>
+            <td><input title="Character Class" type="text" name="attr_character_class"></td>
+            <td>Adv Class</td>
+            <td><input title="Character Adv Class" type="text" name="attr_character_adv_class"></td>
+            <td>-1 <br> <input id="condition2" type="checkbox" name="attr_condition2" value="1" /></td>
+        </tr>
+        <tr>
+            <td>Multi Class</td>
+            <td><input title="Character Multi Class" type="text" name="attr_character_multi_class"></td>
+            <td>Alignment</td>
+            <td><input title "Character Alignment" type="text" name="attr_character_alignment"></td>
+            <td>-2 <br> <input id="condition3" type="checkbox" name="attr_condition3" value="1" /></td>
+        </tr>
+        <tr>
+            <td>Experience</td>
+            <td><input title ="Character Experience" type="number" name="attr_character_experience" style="width:200px;"></td>
+            <td>Next Level</td>
+            <td><input title="Character Next Level" type="number" name="attr_character_next_level" style="width:200px;"></td>
+            <td>-5 <br> <input id="condition4" type="checkbox" name="attr_condition4" value="1" /></td>
+        </tr>
+        <tr>
+            <td>HP</td>
+            <td><input title="Character Curr HP" type="number" name="attr_character_currhp" style="width:75px;"> / <input title="Character Max HP" type="number" name="attr_character_maxhp" style="width:75px;"></td>
+            <td>Mana</td>
+            <td><input title="Character Curr MP" type="number" name="attr_character_currmp" style="width:75px;"> / <input title="Character Max MP" type="number" name="attr_character_maxmp" style="width:75px;"></td>
+            <td>-10 <br> <input id="condition5" type="checkbox" name="attr_condition5" value="1" /></td>
+        </tr>
+        <tr>
+            <td>Damage Threshold</td>
+            <td><input title="Character Damage Threshold" type="number" name="attr_damage_threshold" style="width:75px;">
+                <input title="Character Fort Def Threshold" type="number" name="attr_damage_threshold_fort_def" style="width:40px;">
+                <input title="Character Feat Threshold" type="number" name="attr_damage_threshold_feat" style="width:40px;">
+                <input title="Character Damage Threshold Bonus" type="number" name="attr_damage_threshold_bonus" style="width:40px;">
+            </td>
+            <td>Damage Reduction</td>
+            <td><input title="Character Damage Reduction" type="number" name="attr_character_damage_reduction"></td>
+            <td>Unconscious <br><input id="condition6" type="checkbox" name="attr_condition6" value="1" /></td>
+        </tr>
+    </table><br><br>
+    
+    <table>
+        <th>Speed</th>
+        <tr>
+            <td>Initiative</td>
+            <td>Speed</td>
+            <td>Base</td>
+            <td>Bonus</td>
+            <td>Penalty</td>
+            <td>Special Movement</td>
+        </tr>
+        <tr>
+            <td><input title="Character Initiative" type="text" name="attr_character_initiative" style="width:75px"></td>
+            <td><input title="Character Speed" type="number" name="attr_character_speed"></td>
+            <td><input title="Character Speed Base" type="number" name="attr_character_speed_base"></td>
+            <td><input title="Character Speed Bonus" type="number" name="attr_character_speed_bonus"></td>
+            <td><input title="Character Speed Penalty" type="number" name="attr_character_speed_penalty"></td>
+            <td><input title="Character Special Movement" type="text" name="attr_character_special_movement"></td>
+        </tr>
+    </table><br><br>
+    
+    <table>
+        <th>Defenses</th>
+        <tr>
+            <td>Fort</td>
+            <td>10+</td>
+            <td>Level</td>
+            <td>Ability</td>
+            <td>Class</td>
+            <td>Feats</td>
+            <td>Bonus</td>
+        </tr>
+        <tr>
+            <td><input title="Character Fort" type="number" name="attr_character_fort"></td>
+            <td>10+</td>
+            <td><input title="Character Fort Level" type="number" name="attr_character_fort_level"></td>
+            <td><input title="Character Fort Ability" type="number" name="attr_character_fort_ability"></td>
+            <td><input title="Character Fort Class" type="number" name="attr_character_fort_class"></td>
+            <td><input title="Character Fort Feats" type="number" name="attr_character_fort_feats"></td>
+            <td><input title="Character Fort Bonus" type="number" name="attr_character_fort_bonus"></td>
+        </tr>
+    </table><br>
+    
+        <table>
+        <tr>
+            <td>Ref</td>
+            <td>10+</td>
+            <td>Level</td>
+            <td>Ability</td>
+            <td>Class</td>
+            <td>Feats</td>
+            <td>Bonus</td>
+        </tr>
+        <tr>
+            <td><input title="Character Ref" type="number" name="attr_character_ref"></td>
+            <td>10+</td>
+            <td><input title="Character Ref Level" type="number" name="attr_character_ref_level"></td>
+            <td><input title="Character Ref Ability" type="number" name="attr_character_ref_ability"></td>
+            <td><input title="Character Ref Class" type="number" name="attr_character_ref_class"></td>
+            <td><input title="Character Ref Feats" type="number" name="attr_character_ref_feats"></td>
+            <td><input title="Character Ref Bonus" type="number" name="attr_character_ref_bonus"></td>
+        </tr>
+    </table><br>
+    
+        <table>
+        <tr>
+            <td>Will</td>
+            <td>10+</td>
+            <td>Level</td>
+            <td>Ability</td>
+            <td>Class</td>
+            <td>Feats</td>
+            <td>Bonus</td>
+        </tr>
+        <tr>
+            <td><input title="Character Will" type="number" name="attr_character_will"></td>
+            <td>10+</td>
+            <td><input title="Character Will Level" type="number" name="attr_character_will_level"></td>
+            <td><input title="Character Will Ability" type="number" name="attr_character_will_ability"></td>
+            <td><input title="Character Will Class" type="number" name="attr_character_will_class"></td>
+            <td><input title="Character Will Feats" type="number" name="attr_character_will_feats"></td>
+            <td><input title="Character Will Bonus" type="number" name="attr_character_will_bonus"></td>
+        </tr>
+    </table><br>
+    
+    <table>
+        <th>Damage Modifiers</th>
+        <tr>
+            <td>Immunities</td>
+            <td><input title="Character Immunities" type="text" name="attr_character_immunities"></td>
+        </tr>
+        <tr>
+            <td>Resistances</td>
+            <td><input title="Character Resistances" type="text" name="attr_character_resistances"></td>
+        </tr>
+        <tr>
+            <td>Vulnerabilities</td>
+            <td><input title="Character Vulnerabilities" type="text" name="attr_character_vulnerabilities"></td>
+        </tr>
+    </table>
+
+  </div>
+</div>
+</div>
+<div class="sheet-skills">
+    <table>
+        <th>Ability Scores</th>
+        <tr>
+            <td>Score</td>
+            <td>Ability</td>
+            <td>Modifier</td>
+            <td>Notes</td>
+        </tr>
+        <tr>
+            <td><input title="Character Strength" type="number" name="attr_character_strength"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a strength check}} {{Result=[[1d20+@{character_strength_mod}]]}}'> Strength</td>
+            <td><input title="Character Strength Mod" type="number" name="attr_character_strength_mod"></td>
+            <td><input title="Character Strength Notes" type="text" name="attr_character_strength_notes"></td>
+        </tr>
+        <tr>
+            <td><input title="Character Vitality" type="number" name="attr_character_vitality"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a vitality check}} {{Result=[[1d20+@{character_vitality_mod}]]}}'>Vitality</td>
+            <td><input title="Character Vitality Mod" type="number" name="attr_character_vitality_mod"></td>
+            <td><input title="Character Vitality Notes" type="text" name="attr_character_vitality_notes"></td>
+        </tr>
+        <tr>
+            <td><input title="Character Agility" type="number" name="attr_character_agility"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs an agility check}} {{Result=[[1d20+@{character_agility_mod}]]}}'>Agility</td>
+            <td><input title="Character Agility Mod" type="number" name="attr_character_agility_mod"></td>
+            <td><input title="Character Agility Notes" type="text" name="attr_character_agility_notes"></td>
+        </tr>
+        <tr>
+            <td><input title="Character Intelligence" type="number" name="attr_character_intelligence"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs an intelligence check}} {{Result=[[1d20+@{character_intelligence_mod}]]}}'> Intelligence</td>
+            <td><input title="Character Intelligence Mod" type="number" name="attr_character_intelligence_mod"></td>
+            <td><input title="Character Intelligence Notes" type="text" name="attr_character_intelligence_notes"></td>
+        </tr>
+        <tr>
+            <td><input title="Character Mind" type="number" name="attr_character_mind"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a mind check}} {{Result=[[1d20+@{character_mind_mod}]]}}'> Mind</td>
+            <td><input title="Character Mind Mod" type="number" name="attr_character_mind_mod"></td>
+            <td><input title="Character Mind Notes" type="text" name="attr_character_mind_notes"></td>
+        </tr>
+        <tr>
+            <td><input title="Character Charisma" type="number" name="attr_character_charisma"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a charisma check}} {{Result=[[1d20+@{character_charisma_mod}]]}}'>Charisma</td>
+            <td><input title="Character Charisma Mod" type="number" name="attr_character_charisma_mod"></td>
+            <td><input title="Character Charisma Notes" type="text" name="attr_character_charisma_notes"></td>
+        </tr>
+    </table><br>
+    <table>
+        <th>Skills</th>
+        <tr>
+            <td>Score</td>
+            <td>Skill</td>
+            <td>1/2 Lv</td>
+            <td>Ability</td>
+            <td>Trained</td>
+            <td>Focus</td>
+            <td>Bonus</td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_acrobatics" value="[[(@{character_half_level}+@{character_agility_mod}+@{acrobaticstrained}+@{acrobaticsfocus}+@{character_acrobatics_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs an acrobatics check}} {{Result=[[1d20+@{character_acrobatics}]]}}'>Acrobatics</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>AGI <input title="Character Acrobatics Skill" type="number" name="attr_character_acrobatics_skill" value="@{character_agility_mod}" disabled="true"></td>
+            <td><input id="AcrobaticsTrained" type="checkbox" name="attr_acrobaticstrained" value="5" /></td>
+            <td><input id="AcrobaticsFocus" type="checkbox" name="attr_acrobaticsfocus" value="5" /></td>
+            <td><input title="Character Acrobatics Bonus" type="number" name="attr_character_acrobatics_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_alchymy" value="[[(@{character_half_level}+@{character_intelligence_mod}+@{alchymytrained}+@{alchymyfocus}+@{character_alchymy_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs an alchymy check}} {{Result=[[1d20+@{character_alchymy}]]}}'>Alchymy</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>INT <input title="Character alchymy Skill" type="number" name="attr_character_alchymy_skill" value="@{character_intelligence_mod}" disabled="true"></td>
+            <td><input id="alchymyTrained" type="checkbox" name="attr_alchymytrained" value="5" /></td>
+            <td><input id="alchymyFocus" type="checkbox" name="attr_alchymyfocus" value="5" /></td>
+            <td><input title="Character alchymy Bonus" type="number" name="attr_character_alchymy_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_athletics" value="[[(@{character_half_level}+@{character_strength_mod}+@{athleticstrained}+@{athleticsfocus}+@{character_athletics_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs an athletics check}} {{Result=[[1d20+@{character_athletics}]]}}'>Athletics</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>STR <input title="Character athletics Skill" type="number" name="attr_character_athletics_skill" value="@{character_strength_mod}" disabled="true"></td>
+            <td><input id="athleticsTrained" type="checkbox" name="attr_athleticstrained" value="5" /></td>
+            <td><input id="athleticsFocus" type="checkbox" name="attr_athleticsfocus" value="5" /></td>
+            <td><input title="Character athletics Bonus" type="number" name="attr_character_athletics_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_deception" value="[[(@{character_half_level}+@{character_charisma_mod}+@{deceptiontrained}+@{deceptionfocus}+@{character_deception_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a deception check}} {{Result=[[1d20+@{character_deception}]]}}'>Deception</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>CHR <input title="Character deception Skill" type="number" name="attr_character_deception_skill" value="@{character_charisma_mod}" disabled="true"></td>
+            <td><input id="deceptionTrained" type="checkbox" name="attr_deceptiontrained" value="5" /></td>
+            <td><input id="deceptionFocus" type="checkbox" name="attr_deceptionfocus" value="5" /></td>
+            <td><input title="Character deception Bonus" type="number" name="attr_character_deception_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_disable" value="[[(@{character_half_level}+@{character_agility_mod}+@{disabletrained}+@{disablefocus}+@{character_disable_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a disable check}} {{Result=[[1d20+@{character_disable}]]}}'>Disable</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>AGI <input title="Character disable Skill" type="number" name="attr_character_disable_skill" value="@{character_agility_mod}" disabled="true"></td>
+            <td><input id="disableTrained" type="checkbox" name="attr_disabletrained" value="5" /></td>
+            <td><input id="disableFocus" type="checkbox" name="attr_disablefocus" value="5" /></td>
+            <td><input title="Character disable Bonus" type="number" name="attr_character_disable_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_knowledge1" value="[[(@{character_half_level}+@{character_intelligence_mod}+@{knowledge1trained}+@{knowledge1focus}+@{character_knowledge1_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a knowledge, @{character_knowledge1_content} check}} {{Result=[[1d20+@{character_knowledge1}]]}}'> Knowledge </button> <input type="text" title="Character Knowledge1 Content" name="attr_character_knowledge1_content" style="width:120px;"> </td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>INT <input title="Character knowledge1 Skill" type="number" name="attr_character_knowledge1_skill" value="@{character_intelligence_mod}" disabled="true"></td>
+            <td><input id="knowledge1Trained" type="checkbox" name="attr_knowledge1trained" value="5" /></td>
+            <td><input id="knowledge1Focus" type="checkbox" name="attr_knowledge1focus" value="5" /></td>
+            <td><input title="Character knowledge1 Bonus" type="number" name="attr_character_knowledge1_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_knowledge2" value="[[(@{character_half_level}+@{character_intelligence_mod}+@{knowledge2trained}+@{knowledge2focus}+@{character_knowledge2_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a knowledge, @{character_knowledge2_content} check}} {{Result=[[1d20+@{character_knowledge2}]]}}'> Knowledge </button> <input type="text" title="Character knowledge2 Content" name="attr_character_knowledge2_content" style="width:120px;"> </td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>INT <input title="Character knowledge2 Skill" type="number" name="attr_character_knowledge2_skill" value="@{character_intelligence_mod}" disabled="true"></td>
+            <td><input id="knowledge2Trained" type="checkbox" name="attr_knowledge2trained" value="5" /></td>
+            <td><input id="knowledge2Focus" type="checkbox" name="attr_knowledge2focus" value="5" /></td>
+            <td><input title="Character knowledge2 Bonus" type="number" name="attr_character_knowledge2_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_knowledge3" value="[[(@{character_half_level}+@{character_intelligence_mod}+@{knowledge3trained}+@{knowledge3focus}+@{character_knowledge3_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a knowledge, @{character_knowledge3_content} check}} {{Result=[[1d20+@{character_knowledge3}]]}}'> Knowledge </button> <input type="text" title="Character knowledge3 Content" name="attr_character_knowledge3_content" style="width:120px;"> </td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>INT <input title="Character knowledge3 Skill" type="number" name="attr_character_knowledge3_skill" value="@{character_intelligence_mod}" disabled="true"></td>
+            <td><input id="knowledge3Trained" type="checkbox" name="attr_knowledge3trained" value="5" /></td>
+            <td><input id="knowledge3Focus" type="checkbox" name="attr_knowledge3focus" value="5" /></td>
+            <td><input title="Character knowledge3 Bonus" type="number" name="attr_character_knowledge3_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_medicine" value="[[(@{character_half_level}+@{character_intelligence_mod}+@{medicinetrained}+@{medicinefocus}+@{character_medicine_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a medicine check}} {{Result=[[1d20+@{character_medicine}]]}}'>Medicine</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>INT <input title="Character medicine Skill" type="number" name="attr_character_medicine_skill" value="@{character_intelligence_mod}" disabled="true"></td>
+            <td><input id="medicineTrained" type="checkbox" name="attr_medicinetrained" value="5" /></td>
+            <td><input id="medicineFocus" type="checkbox" name="attr_medicinefocus" value="5" /></td>
+            <td><input title="Character medicine Bonus" type="number" name="attr_character_medicine_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_perception" value="[[(@{character_half_level}+@{character_mind_mod}+@{perceptiontrained}+@{perceptionfocus}+@{character_perception_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a perception check}} {{Result=[[1d20+@{character_perception}]]}}'>Perception</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>MND <input title="Character perception Skill" type="number" name="attr_character_perception_skill" value="@{character_mind_mod}" disabled="true"></td>
+            <td><input id="perceptionTrained" type="checkbox" name="attr_perceptiontrained" value="5" /></td>
+            <td><input id="perceptionFocus" type="checkbox" name="attr_perceptionfocus" value="5" /></td>
+            <td><input title="Character perception Bonus" type="number" name="attr_character_perception_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_perform" value="[[(@{character_half_level}+@{character_charisma_mod}+@{performtrained}+@{performfocus}+@{character_perform_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a perform, @{character_perform_content} check}} {{Result=[[1d20+@{character_perform}]]}}'> Perform </button> <input type="text" title="Character perform Content" name="attr_character_perform_content" style="width:120px;"> </td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>CHR <input title="Character perform Skill" type="number" name="attr_character_perform_skill" value="@{character_charisma_mod}" disabled="true"></td>
+            <td><input id="performTrained" type="checkbox" name="attr_performtrained" value="5" /></td>
+            <td><input id="performFocus" type="checkbox" name="attr_performfocus" value="5" /></td>
+            <td><input title="Character perform Bonus" type="number" name="attr_character_perform_bonus" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_persuasion" value="[[(@{character_half_level}+@{character_charisma_mod}+@{persuasiontrained}+@{persuasionfocus}+@{character_persuasion_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a persuasion check}} {{Result=[[1d20+@{character_persuasion}]]}}'>Persuasion</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>CHR <input title="Character persuasion Skill" type="number" name="attr_character_persuasion_skill" value="@{character_charisma_mod}" disabled="true"></td>
+            <td><input id="persuasionTrained" type="checkbox" name="attr_persuasiontrained" value="5" /></td>
+            <td><input id="persuasionFocus" type="checkbox" name="attr_persuasionfocus" value="5" /></td>
+            <td><input title="Character persuasion Bonus" type="number" name="attr_character_persuasion_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_pilot" value="[[(@{character_half_level}+@{character_agility_mod}+@{pilottrained}+@{pilotfocus}+@{character_pilot_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a pilot check}} {{Result=[[1d20+@{character_pilot}]]}}'>Pilot</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>AGI <input title="Character pilot Skill" type="number" name="attr_character_pilot_skill" value="@{character_agility_mod}" disabled="true"></td>
+            <td><input id="pilotTrained" type="checkbox" name="attr_pilottrained" value="5" /></td>
+            <td><input id="pilotFocus" type="checkbox" name="attr_pilotfocus" value="5" /></td>
+            <td><input title="Character pilot Bonus" type="number" name="attr_character_pilot_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_ride" value="[[(@{character_half_level}+@{character_agility_mod}+@{ridetrained}+@{ridefocus}+@{character_ride_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a ride check}} {{Result=[[1d20+@{character_ride}]]}}'>Ride</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>AGI <input title="Character ride Skill" type="number" name="attr_character_ride_skill" value="@{character_agility_mod}" disabled="true"></td>
+            <td><input id="rideTrained" type="checkbox" name="attr_ridetrained" value="5" /></td>
+            <td><input id="rideFocus" type="checkbox" name="attr_ridefocus" value="5" /></td>
+            <td><input title="Character ride Bonus" type="number" name="attr_character_ride_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_smithing" value="[[(@{character_half_level}+@{character_intelligence_mod}+@{smithingtrained}+@{smithingfocus}+@{character_smithing_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a smithing check}} {{Result=[[1d20+@{character_smithing}]]}}'>Smithing</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>INT <input title="Character smithing Skill" type="number" name="attr_character_smithing_skill" value="@{character_intelligence_mod}" disabled="true"></td>
+            <td><input id="smithingTrained" type="checkbox" name="attr_smithingtrained" value="5" /></td>
+            <td><input id="smithingFocus" type="checkbox" name="attr_smithingfocus" value="5" /></td>
+            <td><input title="Character smithing Bonus" type="number" name="attr_character_smithing_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_spellcraft" value="[[(@{character_half_level}+@{character_mind_mod}+@{spellcrafttrained}+@{spellcraftfocus}+@{character_spellcraft_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a spellcraft check}} {{Result=[[1d20+@{character_spellcraft}]]}}'>Spellcraft</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>MND <input title="Character spellcraft Skill" type="number" name="attr_character_spellcraft_skill" value="@{character_mind_mod}" disabled="true"></td>
+            <td><input id="spellcraftTrained" type="checkbox" name="attr_spellcrafttrained" value="5" /></td>
+            <td><input id="spellcraftFocus" type="checkbox" name="attr_spellcraftfocus" value="5" /></td>
+            <td><input title="Character spellcraft Bonus" type="number" name="attr_character_spellcraft_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_stealth" value="[[(@{character_half_level}+@{character_agility_mod}+@{stealthtrained}+@{stealthfocus}+@{character_stealth_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a stealth check}} {{Result=[[1d20+@{character_stealth}]]}}'>Stealth</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>AGI <input title="Character stealth Skill" type="number" name="attr_character_stealth_skill" value="@{character_agility_mod}" disabled="true"></td>
+            <td><input id="stealthTrained" type="checkbox" name="attr_stealthtrained" value="5" /></td>
+            <td><input id="stealthFocus" type="checkbox" name="attr_stealthfocus" value="5" /></td>
+            <td><input title="Character stealth Bonus" type="number" name="attr_character_stealth_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_survival" value="[[(@{character_half_level}+@{character_mind_mod}+@{survivaltrained}+@{survivalfocus}+@{character_survival_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a survival check}} {{Result=[[1d20+@{character_survival}]]}}'>Survival</td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td>MND <input title="Character survival Skill" type="number" name="attr_character_survival_skill" value="@{character_mind_mod}" disabled="true"></td>
+            <td><input id="survivalTrained" type="checkbox" name="attr_survivaltrained" value="5" /></td>
+            <td><input id="survivalFocus" type="checkbox" name="attr_survivalfocus" value="5" /></td>
+            <td><input title="Character survival Bonus" type="number" name="attr_character_survival_bonus" value="0"></td>            
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_weapon1" value="[[(@{character_half_level}+@{character_weapon1_skill}+@{weapon1trained}+@{weapon1focus}+@{character_weapon1_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a weapon1, @{character_weapon1_content} check}} {{Result=[[1d20+@{character_weapon1}]]}}'> Weapon </button> <input type="text" title="Character weapon1 Content" name="attr_character_weapon1_content"> </td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td><input type="text" title="Character Weapon1 Ability" name="attr_chearacter_weapon1_ability" style="width:50px;"> <input title="Character weapon1 Skill" type="number" name="attr_character_weapon1_skill"></td>
+            <td><input id="weapon1Trained" type="checkbox" name="attr_weapon1trained" value="5" /></td>
+            <td><input id="weapon1Focus" type="checkbox" name="attr_weapon1focus" value="5" /></td>
+            <td><input title="Character weapon1 Bonus" type="number" name="attr_character_weapon1_bonus" value="0"></td>          
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_character_weapon2" value="[[(@{character_half_level}+@{character_weapon2_skill}+@{weapon2trained}+@{weapon2focus}+@{character_weapon2_bonus})]]" disabled="true"></td>
+            <td><button type='roll' value='&{template:default} {{name=@{character_name} performs a weapon, @{character_weapon2_content} check}} {{Result=[[1d20+@{character_weapon2}]]}}'> Weapon </button> <input type="text" title="Character weapon2 Content" name="attr_character_weapon2_content"> </td>
+            <td><input type="number" name="attr_character_half_level" value="[[floor(@{character_level}/2)]]" disabled="true"></td>
+            <td><input type="text" title="Character weapon2 Ability" name="attr_chearacter_weapon2_ability" style="width:50px;"> <input title="Character weapon2 Skill" type="number" name="attr_character_weapon2_skill"></td>
+            <td><input id="weapon2Trained" type="checkbox" name="attr_weapon2trained" value="5" /></td>
+            <td><input id="weapon2Focus" type="checkbox" name="attr_weapon2focus" value="5" /></td>
+            <td><input title="Character weapon2 Bonus" type="number" name="attr_character_weapon2_bonus" value="0"></td>          
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td style="width:250px">Passive Perception (10 + Perception)</td>
+            <td><input type="number" name="attr_passive_perception" value="[[(@{character_perception}+10)]]" disabled="true"></td></td>
+            <td>Special Senses</td>
+            <td><input type="text" title="Special Senses" name="attr_special_senses" style="width:290px"></td>
+        </tr>
+    </table>
+    
+</div>
+<div class="sheet-feats">
+    <table>
+        <th>Racial Features</th>
+        <tr>
+            <td><textarea title="Character Racial Feature 1" name="attr_character_racial_feature1" style="width:750px"></textarea></td>
+        </tr>
+        <tr>
+            <td><textarea title="Character Racial Feature 2" name="attr_character_racial_feature2" style="width:750px"></textarea> </td>
+        </tr>
+    </table>
+    <table>
+        <th>Talents</th>
+        <tr>
+            <td><textarea title="Character Talents 1" name="attr_character_talents1" style="width:750px"></textarea></td>
+        </tr>
+        <tr>
+            <td><textarea title="Character Talents 2" name="attr_character_talents2" style="width:750px"></textarea> </td>
+        </tr>
+    </table>
+    <table>
+        <th>Feats</th>
+        <tr>
+            <td><textarea title="Character Feat 1" name="attr_character_feat1" style="width:750px"></textarea></td>
+        </tr>
+        <tr>
+            <td><textarea title="Character Feat2" name="attr_character_feat2" style="width:750px"></textarea> </td>
+        </tr>
+    </table>    
+</div>
+<div class="sheet-items">
+    <table>
+        <tr>
+            <td>Gold</td>
+            <td><input type="text" title="Character Gold" name="attr_character_gold"></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <th>Inventory</th>
+        <tr>
+            <td>Item Name</td>
+            <td>X</td>
+            <td>Bulk</td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name1" name="attr_item_name1"></td>
+            <td><input type="number" name="attr_item_name1_quantity"></td>
+            <td><input type="number" name="attr_item_name1_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name2" name="attr_item_name2"></td>
+            <td><input type="number" name="attr_item_name2_quantity"></td>
+            <td><input type="number" name="attr_item_name2_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name3" name="attr_item_name3"></td>
+            <td><input type="number" name="attr_item_name3_quantity"></td>
+            <td><input type="number" name="attr_item_name3_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name4" name="attr_item_name4"></td>
+            <td><input type="number" name="attr_item_name4_quantity"></td>
+            <td><input type="number" name="attr_item_name4_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name5" name="attr_item_name5"></td>
+            <td><input type="number" name="attr_item_name5_quantity"></td>
+            <td><input type="number" name="attr_item_name5_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name6" name="attr_item_name6"></td>
+            <td><input type="number" name="attr_item_name6_quantity"></td>
+            <td><input type="number" name="attr_item_name6_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name7" name="attr_item_name7"></td>
+            <td><input type="number" name="attr_item_name7_quantity"></td>
+            <td><input type="number" name="attr_item_name7_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name8" name="attr_item_name8"></td>
+            <td><input type="number" name="attr_item_name8_quantity"></td>
+            <td><input type="number" name="attr_item_name8_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name9" name="attr_item_name9"></td>
+            <td><input type="number" name="attr_item_name9_quantity"></td>
+            <td><input type="number" name="attr_item_name9_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name10" name="attr_item_name10"></td>
+            <td><input type="number" name="attr_item_name10_quantity"></td>
+            <td><input type="number" name="attr_item_name10_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name11" name="attr_item_name11"></td>
+            <td><input type="number" name="attr_item_name11_quantity"></td>
+            <td><input type="number" name="attr_item_name11_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name12" name="attr_item_name12"></td>
+            <td><input type="number" name="attr_item_name12_quantity"></td>
+            <td><input type="number" name="attr_item_name12_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name13" name="attr_item_name13"></td>
+            <td><input type="number" name="attr_item_name13_quantity"></td>
+            <td><input type="number" name="attr_item_name13_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name14" name="attr_item_name14"></td>
+            <td><input type="number" name="attr_item_name14_quantity"></td>
+            <td><input type="number" name="attr_item_name14_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name15" name="attr_item_name15"></td>
+            <td><input type="number" name="attr_item_name15_quantity"></td>
+            <td><input type="number" name="attr_item_name15_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name16" name="attr_item_name16"></td>
+            <td><input type="number" name="attr_item_name16_quantity"></td>
+            <td><input type="number" name="attr_item_name16_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name17" name="attr_item_name17"></td>
+            <td><input type="number" name="attr_item_name17_quantity"></td>
+            <td><input type="number" name="attr_item_name17_bulk"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Item Name18" name="attr_item_name18"></td>
+            <td><input type="number" name="attr_item_name18_quantity"></td>
+            <td><input type="number" name="attr_item_name18_bulk"></td>
+        </tr>
+        <tr>
+            <td>Total Inventory Bulk</td>
+            <td></td>
+            <td><input type="number" name="attr_character_total_bulk"></td>
+        </tr>
+        <tr>
+            <td>Maximum Bulk STR <input type="number" name="attr_character_max_bulk_strength" value="@{character_strength}" disabled="true"> +</td>
+            <td>Bonus <input type="number" name="attr_character_max_bulk_bonus"></td>
+            <td><input type="number" name="attr_character_max_bulk" value="[[(@{character_max_bulk_strength}+@{character_max_bulk_bonus})]]" disabled="true"></td>
+        </tr>
+    </table>
+    
+</div>
+<div class="sheet-attacks">
+    <table>
+        <th>Attacks</th>
+        <tr>
+            <td>Weapon</td>
+            <td>Type</td>
+            <td>Range</td>
+            <td>Atk Bonus</td>
+            <td>Damage</td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Attack Weapon1" name="attr_character_attack_weapon1"></td>
+            <td><input type="text" title="Attack Type1" name="attr_character_attack_type1"></td>
+            <td><input type="number" name="attr_character_attack_range1"></td>
+            <td><input type="number" name="attr_character_attack_bonus1"></td>
+            <td><input type="text" title="Attack Damage1" name="attr_character_attack_damage1"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Attack Weapon2" name="attr_character_attack_weapon2"></td>
+            <td><input type="text" title="Attack Type2" name="attr_character_attack_type2"></td>
+            <td><input type="number" name="attr_character_attack_range2"></td>
+            <td><input type="number" name="attr_character_attack_bonus2"></td>
+            <td><input type="text" title="Attack Damage2" name="attr_character_attack_damage2"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Attack Weapon3" name="attr_character_attack_weapon3"></td>
+            <td><input type="text" title="Attack Type3" name="attr_character_attack_type3"></td>
+            <td><input type="number" name="attr_character_attack_range3"></td>
+            <td><input type="number" name="attr_character_attack_bonus3"></td>
+            <td><input type="text" title="Attack Damage3" name="attr_character_attack_damage3"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Attack Weapon4" name="attr_character_attack_weapon4"></td>
+            <td><input type="text" title="Attack Type4" name="attr_character_attack_type4"></td>
+            <td><input type="number" name="attr_character_attack_range4"></td>
+            <td><input type="number" name="attr_character_attack_bonus4"></td>
+            <td><input type="text" title="Attack Damage4" name="attr_character_attack_damage4"></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Attack Weapon5" name="attr_character_attack_weapon5"></td>
+            <td><input type="text" title="Attack Type5" name="attr_character_attack_type5"></td>
+            <td><input type="number" name="attr_character_attack_range5"></td>
+            <td><input type="number" name="attr_character_attack_bonus5"></td>
+            <td><input type="text" title="Attack Damage5" name="attr_character_attack_damage5"></td>
+        </tr>        
+    </table>
+</div>
+<div class="sheet-spells">
+    <table>
+        <th>Spells</th>
+        <tr>
+            <td>Spell</td>
+            <td>Mana</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Spell 1" name="attr_character_spell1"></td>
+            <td><input type="number" name="attr_character_spell1_mana"></td>
+            <td><textarea title="Spell 1 Description" name="attr_character_spell1_description" style="width:500px"></textarea> </td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Spell 2" name="attr_character_spell2"></td>
+            <td><input type="number" name="attr_character_spell2_mana"></td>
+            <td><textarea title="Spell 2 Description" name="attr_character_spell2_description" style="width:500px"></textarea> </td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Spell 3" name="attr_character_spell3"></td>
+            <td><input type="number" name="attr_character_spell3_mana"></td>
+            <td><textarea title="Spell 3 Description" name="attr_character_spell3_description" style="width:500px"></textarea> </td>
+        </tr> 
+        <tr>
+            <td><input type="text" title="Spell 4" name="attr_character_spell4"></td>
+            <td><input type="number" name="attr_character_spell4_mana"></td>
+            <td><textarea title="Spell 4 Description" name="attr_character_spell4_description" style="width:500px"></textarea> </td>
+        </tr> 
+        <tr>
+            <td><input type="text" title="Spell 5" name="attr_character_spell5"></td>
+            <td><input type="number" name="attr_character_spell5_mana"></td>
+            <td><textarea title="Spell 5 Description" name="attr_character_spell5_description" style="width:500px"></textarea> </td>
+        </tr> 
+        <tr>
+            <td><input type="text" title="Spell 6" name="attr_character_spell6"></td>
+            <td><input type="number" name="attr_character_spell6_mana"></td>
+            <td><textarea title="Spell 6 Description" name="attr_character_spell6_description" style="width:500px"></textarea> </td>
+        </tr> 
+        <tr>
+            <td><input type="text" title="Spell 7" name="attr_character_spell7"></td>
+            <td><input type="number" name="attr_character_spell7_mana"></td>
+            <td><textarea title="Spell 7 Description" name="attr_character_spell2_description" style="width:500px"></textarea> </td>
+        </tr> 
+        <tr>
+            <td><input type="text" title="Spell 8" name="attr_character_spell8"></td>
+            <td><input type="number" name="attr_character_spell8_mana"></td>
+            <td><textarea title="Spell 8 Description" name="attr_character_spell8_description" style="width:500px"></textarea> </td>
+        </tr> 
+        <tr>
+            <td><input type="text" title="Spell 9" name="attr_character_spell9"></td>
+            <td><input type="number" name="attr_character_spell9_mana"></td>
+            <td><textarea title="Spell 9 Description" name="attr_character_spell9_description" style="width:500px"></textarea> </td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Spell 10" name="attr_character_spell10"></td>
+            <td><input type="number" name="attr_character_spell10_mana"></td>
+            <td><textarea title="Spell 10 Description" name="attr_character_spell10_description" style="width:500px"></textarea> </td>
+        </tr> 
+    </table>
+</div>
+<div class="sheet-abilities">
+    <table>
+        <tr>
+            <td>Ability</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 1" name="attr_character_ability1"></td>
+            <td><textarea title="Ability 1 Description" name="attr_character_ability1_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 2" name="attr_character_ability2"></td>
+            <td><textarea title="Ability 2 Description" name="attr_character_ability2_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 3" name="attr_character_ability3"></td>
+            <td><textarea title="Ability 3 Description" name="attr_character_ability3_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 4" name="attr_character_ability4"></td>
+            <td><textarea title="Ability 4 Description" name="attr_character_ability4_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 5" name="attr_character_ability5"></td>
+            <td><textarea title="Ability 5 Description" name="attr_character_ability5_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 6" name="attr_character_ability6"></td>
+            <td><textarea title="Ability 6 Description" name="attr_character_ability6_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 7" name="attr_character_ability7"></td>
+            <td><textarea title="Ability 7 Description" name="attr_character_ability7_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 8" name="attr_character_ability8"></td>
+            <td><textarea title="Ability 8 Description" name="attr_character_ability8_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 9" name="attr_character_ability9"></td>
+            <td><textarea title="Ability 9 Description" name="attr_character_ability9_description" style="width:600px"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" title="Ability 10" name="attr_character_ability10"></td>
+            <td><textarea title="Ability 10 Description" name="attr_character_ability10_description" style="width:600px"></textarea></td>
+        </tr>
+    </table>
+</div>
+<div class="sheet-notes">
+    <table>
+        <th>Notes</th>
+        <tr>
+            <td><textarea title="Notes" name="attr_character_notes" style="width:800px;height:1000px"></textarea></td>
+        </tr>
+    </table>
+</div>
+
+<script type="text/worker">
+    const buttonlist = ["main","skills","feats","items","attacks","spells","abilities","notes"];
+    buttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+</script>
